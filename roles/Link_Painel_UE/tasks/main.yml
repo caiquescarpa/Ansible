@@ -1,0 +1,11 @@
+- name: Copiar Atalho para o host
+  win_copy:
+    src: "{{ role_path }}/files/Painel.lnk"
+    dest: 'C:\Users\Public\Desktop\Painel.lnk'
+    remote_src: no
+
+- name: Copiar  Icon para o host
+  win_copy:
+    src: "{{ role_path }}/files/Painel_UE.ico"
+    dest: 'C:\TasyJava\Painel_UE.ico'
+    remote_src: no

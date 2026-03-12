@@ -1,0 +1,17 @@
+[windows]
+HSP-NEO01.unimedara.com.br
+HSP-NEO02.unimedara.com.br
+HSP-NEO04.unimedara.com.br
+HSP-NEO05.unimedara.com.br
+HSP-NEO06.unimedara.com.br
+HSP-NEO07.unimedara.com.br
+HSP-NEO08.unimedara.com.br
+HSP-NEO08OLD.unimedara.com.br
+
+[windows:vars]
+ansible_user=cscarpa@UNIMEDARA.COM.BR
+ansible_connection=winrm
+ansible_winrm_transport=kerberos
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5985
+

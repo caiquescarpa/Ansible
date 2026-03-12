@@ -1,0 +1,8 @@
+- name: Instalar Kaspersky nas máquinas Windows
+  hosts: windows
+  gather_facts: no
+  become: false
+
+  roles:
+    - install-kaspersky
+

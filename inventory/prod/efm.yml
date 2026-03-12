@@ -1,0 +1,12 @@
+[windows]
+HSP-EFM01.unimedara.com.br
+HSP-EFM02.unimedara.com.br
+HSP-EFM05.unimedara.com.br
+
+[windows:vars]
+ansible_user=cscarpa@UNIMEDARA.COM.BR
+ansible_connection=winrm
+ansible_winrm_transport=kerberos
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5985
+

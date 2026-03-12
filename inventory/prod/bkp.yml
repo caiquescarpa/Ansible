@@ -1,0 +1,13 @@
+[windows]
+HSP-BKP01.unimedara.com.br
+HSP-BKP02.unimedara.com.br
+HSP-BKP04.unimedara.com.br
+HSP-BKP05.unimedara.com.br
+
+[windows:vars]
+ansible_user=cscarpa@UNIMEDARA.COM.BR
+ansible_connection=winrm
+ansible_winrm_transport=kerberos
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5985
+

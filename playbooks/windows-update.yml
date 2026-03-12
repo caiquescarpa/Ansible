@@ -1,0 +1,10 @@
+- name: Gerenciar atualizações em máquinas Windows
+  hosts: windows
+  gather_facts: no
+
+  vars:
+    win_updates_mode: install  # ou "check" — pode sobrescrever com --extra-vars
+
+  roles:
+    - windows-update
+

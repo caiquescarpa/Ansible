@@ -1,0 +1,13 @@
+---
+- name: Coletar dados dos hosts Windows
+  hosts: windows
+  gather_facts: no
+  roles:
+    - { role: coletar_modelos, tasks_from: coletar }
+
+- name: Consolidar dados no controlador
+  hosts: localhost
+  gather_facts: no
+  roles:
+    - { role: coletar_modelos, tasks_from: consolidar }
+

@@ -1,0 +1,6 @@
+---
+- name: Atualizar Libreoffice nos servidores Windows
+  hosts: windows
+  gather_facts: no
+  roles:
+    - libreoffice_update
