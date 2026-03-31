@@ -1,7 +1,0 @@
----
-- name: Atualizar Java nos servidores Windows
-  hosts: windows
-  gather_facts: no
-  roles:
-    - deploy_java64
-
